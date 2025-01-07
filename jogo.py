@@ -48,8 +48,16 @@ class Jogo:
     def iniciar_batalha (self):
         """ Fazer a gestão da batalha em turnos """
         print("Iniciando Batalha!")
-        while self.heroi.get_vida() > 0 and self.inimigo.get_vida() > 0
+        while self.heroi.get_vida() > 0 and self.inimigo.get_vida() > 0:
+             print("\nDetalhe dos personagens:")
+             print(self.heroi.exibir_detalhes())
+             print(self.inimigo.exibir_detalhes())
 
+             input("Pressione Enter para atacar...")
+             escolha = input("Escolha (1 - Ataque normal, 2 - Ataque especial): ")
 
-heroi = Heroi("Heroi", 100, 1, "Voar")
-print(heroi.exibir_detalhes())
+# Criar instância do jogo e iniciar batalha
+
+jogo = Jogo()
+
+jogo.iniciar_batalha()
