@@ -48,6 +48,7 @@ class Jogo:
     def iniciar_batalha (self):
         """ Fazer a gestão da batalha em turnos """
         print("Iniciando Batalha!")
+        while self.heroi.get_vida() > 0 and self.inimigo.get_vida() > 0
 
 
 heroi = Heroi("Heroi", 100, 1, "Voar")
